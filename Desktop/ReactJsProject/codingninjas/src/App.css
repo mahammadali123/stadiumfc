@@ -1,0 +1,426 @@
+body {
+  font-family: Mulish,Helvetica,Arial,sans-serif;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  height: 20%;
+  padding-top: 73px;
+  padding-left: 65px;
+  box-sizing: border-box;
+  background-image: url('./background.png');
+}
+
+.heading {
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.subHeading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffff;
+  margin-left: 4px;
+}
+
+.cardTags {
+  flex-wrap: wrap;
+  height: 64px;
+  margin-top: 20px;
+}
+
+.eventDetails {
+  text-align: center;
+  padding: 20px 16px;
+}
+
+.details {
+  text-align: left;
+  font-size: 14px;
+}
+
+.eventDesc {
+  margin-top: 12px;
+  height: 57px;
+  margin-left: 16px;
+  margin: 12px 16px 0 16px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #616161;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.mainSection {
+  padding: 70px 130px;
+}
+
+.eventSection {
+  font-weight: 400;
+  border: 1px solid #d0d0d0;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.eventCategories {
+  padding: 20px 18px;
+  overflow-x: scroll;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.event {
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 19px;
+  font-weight: 400;
+  padding-right: 70px;
+}
+
+.eventIcon {
+  margin-right: 8px;
+  width: 20px;
+}
+
+.subCategories {
+  background: #fafafa;
+  padding: 14px 24px;
+  margin-bottom: 34px;
+  overflow-x: scroll;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.subCategory {
+  margin-right: 52px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.tags {
+  max-width: 20%;
+  margin-right: 52px;
+  font-size: 17px;
+}
+
+.eventCards {
+  width: 80%;
+  margin: 25px 0 0 25px;
+  flex-wrap: wrap;
+}
+
+.tagsHeading {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #616161;
+  margin-bottom: 14px;
+}
+
+.marginBlock {
+  margin-right: 16px;
+}
+
+.tag {
+  color: #424242;
+  font-size: 14px;
+  padding: 6px 12px;
+  font-weight: 400;
+  border-radius: 2px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  display: inline-block;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.text {
+  margin: 0!important;
+}
+
+.highlightTag {
+  color: #fff;
+  background-color: #fa7328;
+}
+
+.eventCard {
+  
+  width: 50%;
+  justify-content: space-between;
+  
+}
+
+.subSection {
+  overflow: hidden;
+  box-shadow: 0 1px 19px 0 rgba(0,0,0,.07);
+  cursor: pointer;
+  font-weight: 400;
+  background: #fff;
+  border-radius: 5px;
+  width: 95%;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.eventImage {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.eventFooter {
+  justify-content: space-between;
+}
+
+.circle {
+  border-radius: 50%;
+  position: relative;
+  width: 10px!important;
+  height: 10px;
+  top: 5px;
+  background: red linear-gradient(#ff73ac,#ff274b);
+  transition: height .25s ease,width .25s ease;
+  transform: translate(-50%,-50%);
+  margin-right: 2px;
+  -webkit-animation: view 2s linear 2s infinite; 
+   animation: view 2s linear 2s infinite;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.eventTitle {
+  margin: 0 0 9px;
+  padding-left: 16px;
+  font-size: 18px;
+  letter-spacing: .2px;
+  font-weight: 700;
+  min-height: 50px;
+}
+
+.itemsCenter {
+  align-items: unset;
+}
+
+
+
+.detailsHeading {
+  color: #757575;
+  font-weight: 400;
+  width: max-content;
+}
+
+.eventCardTags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+.topUserImage {
+  border: 1px solid #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.filterEvents {
+  font-weight: 500;
+  font-size: 18px;
+  color: #757575;
+  margin-left: 16px;
+}
+
+.eventBack {
+  cursor: pointer;
+}
+
+
+.filterTags {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 3px 1px rgba(0,0,0,.12), 0 2px 2px rgba(0,0,0,.14);
+  padding: 18px 16px;
+  color: #757575;
+  font-size: 14px;
+  align-items: center;
+}
+
+.userSection {
+  padding: 20px 16px;
+}
+
+.registerNow {
+  float: right;
+}
+
+.otherUsers {
+  margin: 0;
+  color: #757575;
+  font-size: 13px
+}
+
+.seeMore {
+  color: #fa7328;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.noEvents {
+  font-weight: 100;
+  text-align: center;
+  font-size: 60px;
+}
+
+.fitImage {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.filterPopUp {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 2147483650;
+}
+
+.applyFilters {
+  background: linear-gradient(95.95deg,#f6430f .78%,#ee9f15 99.43%);
+  box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 3px 1px rgba(0,0,0,.12), 0 2px 2px rgba(0,0,0,.14);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 13px 0;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.filterBody {
+  margin-top: 15px;
+  padding: 20px;
+}
+
+.filterTag {
+  margin-right: 20px;
+  padding: 10px;
+}
+
+.filterHeader {
+  display: flex;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0,0,0,.2), 0 3px 1px rgba(0,0,0,.12), 0 2px 2px rgba(0,0,0,.14);
+  font-weight: 500;
+  font-size: 18px;
+  color: #757575;
+  padding: 12px 20px
+}
+
+.regestrationTitle {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  font-size: 12px;
+  color: #121212;
+  background: #fff;
+  padding: 7px 13px;
+  border-radius: 2px;
+  bottom: 7px;
+  top: 80%;
+  right: 7px;
+  box-shadow: 0 1px 11px 0 rgba(0,0,0,.11);
+ 
+}
+
+
+@media screen and (max-width: 720px) {
+  .eventCard {
+    width: 100%;
+  }
+
+  .eventCardTags {
+    display: none;
+  }
+
+  .filterTags {
+    display: flex;
+    align-items: center;
+  }
+
+  .tags {
+    display: none;
+  }
+  
+  .eventCards {
+    width: 100%;
+  }
+  
+  .otherUsers {
+    width: max-content;
+  }
+  .subCategory {
+   margin-right: 20px;
+  }
+  
+}
+@media screen and (max-width: 950px) {
+  .detailsHeading {
+    font-size: 13px;
+    width: max-content;
+  }
+  .details {
+    font-size: 11px;
+  }
+  .mainSection {
+    padding: 70px 20px;
+  }
+
+  .tags {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width : 330px) and (max-width : 720px) {
+  .registerNow {
+    margin-left: 20%;
+  }
+  .subCategory {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .eventCategories::-webkit-scrollbar {
+    display: none;
+  }
+  .subCategories::-webkit-scrollbar {
+    display: none;
+  }
+}
