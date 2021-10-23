@@ -1,0 +1,175 @@
+.root {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f4f0;
+  overflow: hidden;
+ 
+ overflow: hidden;
+}
+
+.redLabel {
+  height: 15px;
+  width: 100%;
+  background-color: red;
+  position: absolute;
+  color: #ffffff;
+  font-size: smaller;
+  top: 100%;
+  left: 0%;
+
+}
+
+.yellowLabel {
+  height: 15px;
+  width: 100%;
+  background-color: yellow;
+  position: absolute;
+  color: black;
+  font-size: smaller;
+  top: 100%;
+  left: 0%;
+
+}
+
+.greenLabel {
+  height: 15px;
+  width: 100%;
+  background-color: green;
+  position: absolute;
+  color: #ffffff;
+  font-size: smaller;
+  top: 100%;
+  left: 0%;
+
+}
+
+.blackLabel {
+  height: 15px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  color: #ffffff;
+  font-size: smaller;
+  top: 100%;
+  left: 0%;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.listSection {
+  min-width: 25%;
+  
+  border: 2px solid rgba(119, 115, 115, 0.3);
+  
+}
+
+.yellow {
+  border: 2px solid yellow;
+  position: relative;
+}
+
+.green {
+  border: 2px solid green;
+  position: relative;
+
+}
+
+.colorsPanel {
+  min-width: 25%;
+  border: 2px solid rgba(119, 115, 115, 0.3);
+  padding: 10px;
+}
+
+.color {
+  padding-bottom: 10px;
+}
+
+.black {
+  position: relative;
+  border: 2px solid black;
+
+}
+
+.red {
+  position: relative;
+  border: 2px solid red;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.body {
+  min-width: 50%;
+  max-width: 50%;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgba(119, 115, 115, 0.3);
+  position: relative;
+}
+
+.note {
+  position: absolute;
+  bottom: 10%;
+  font-size: 24px;
+  font-weight: 800;
+
+
+}
+
+.number {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pageNumberSection {
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  
+  background-color: rgb(186, 238, 240);
+}
+
+.pageNumber {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  margin-right: 5px;
+  border: 2px solid  rgba(119, 115, 115, 0.3);
+}
+
+.pageNumber:hover {
+  background-color:  rgba(119, 115, 115, 0.3);
+}
+
+.ellipsis {
+  width: 50%;
+  opacity: 0.7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+}
+
+.navIcon {
+  cursor: pointer;
+}
+
+.list {
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
